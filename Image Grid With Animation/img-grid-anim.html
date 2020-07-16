@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+<title>Photo Grid With Animation</title>
+    
+<style>
+/*----------------------------------------------------------------------*/
+/* Image Grid */
+/*----------------------------------------------------------------------*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;         /* If you set box-sizing: border-box; on an element, 
+                                     padding and border are included in the width and height */
+}
+    
+
+.img-showcase {
+    list-style: none;
+    width: 100%;
+}
+
+.img-showcase li {
+    display: block;
+    float: left;
+    width: 25%;  
+}
+
+.grid-photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.grid-photo img {
+    opacity: 0.9;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);                   /* Zoom-in Effect */
+    transition: transform 0.5s, opacity 0.5s; /* Animation Part */
+}
+
+.grid-photo img:hover {
+    opacity: 1;
+    transform: scale(1.03);      /* Hover Zoom-in Effect */
+}
+    </style>
+
+</head>
+
+
+
+<body> 
+    
+<section class="igrid">
+    
+        
+      <ul class="img-showcase clearfix">
+       
+            <li>
+            <figure class="grid-photo">
+             <img src="imgforgridanim.png" alt="Your Image">
+            </figure>
+            </li>
+            
+            <li>
+            <figure class="grid-photo">
+             <img src="imgforgridanim.png" alt="Your Image">
+            </figure>
+            </li>
+            
+            <li>
+            <figure class="grid-photo">
+             <img src="imgforgridanim.png" alt="Your Image">
+            </figure>
+            </li>
+                
+            <li>
+            <figure class="grid-photo">
+             <img src="imgforgridanim.png" alt="Your Image">
+            </figure>
+            </li>
+            </ul>
+            
+            <ul class="img-showcase clearfix">
+       
+            <li>
+            <figure class="grid-photo">
+             <img src="imgforgridanim.png" alt="Your Image">
+            </figure>
+            </li>
+            
+            <li>
+            <figure class="grid-photo">
+             <img src="imgforgridanim.png" alt="Your Image">
+            </figure>
+            </li>
+            
+            <li>
+            <figure class="grid-photo">
+             <img src="imgforgridanim.png" alt="Your Image">
+            </figure>
+            </li>
+            
+            <li>
+            <figure class="grid-photo">
+             <img src="imgforgridanim.png" alt="Your Image">
+            </figure>
+            </li>
+            </ul>
+            
+            
+        </section>
+    
+     </body>
+</html>
